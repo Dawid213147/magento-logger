@@ -1,0 +1,18 @@
+<config>    
+    <modules>
+        <Keliop_Logger>
+            <version>0.1.0</version>
+        </Keliop_Logger>
+    </modules>
+    <frontend>
+        <routers>
+            <logger>
+                <use>standard</use>
+                <args>
+                    <module>Keliop_Logger</module>
+                    <frontName>logger</frontName>
+                </args>
+            </logger>
+        </routers>  
+    </frontend>
+</config>
