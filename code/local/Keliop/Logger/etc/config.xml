@@ -26,6 +26,26 @@
                 </entities>
             </keliop_logger_resource>
         </models>
+        <events>
+            <customer_login>
+            <observers>
+                <keliop_observe_login>
+                    <type>singleton</type>                    
+                    <class>Keliop_Logger_Model_Observer</class>
+                    <method>customerLogEvent</method>
+                </keliop_observe_login>
+            </observers>
+        </customer_login>
+         <customer_logout>
+        <observers>
+             <keliop_observe_logout>
+                    <type>singleton</type>                    
+                    <class>Keliop_Logger_Model_Observer</class>
+                    <method>customerLogEvent</method>
+                </keliop_observe_logout>
+        </observers>
+    </customer_logout>
+        </events>
     </global>
     <frontend>
         <routers>
