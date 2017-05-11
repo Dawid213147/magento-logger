@@ -1,9 +1,21 @@
-<config>    
+<?xml version="1.0"?>
+<config>   
     <modules>
         <Keliop_Logger>
             <version>0.1.0</version>
         </Keliop_Logger>
     </modules>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Keliop_Logger after="Mage_Adminhtml">Keliop_Logger</Keliop_Logger>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
     <global>
         <resources>
             <keliop_logger_setup>
@@ -46,6 +58,11 @@
         </observers>
     </customer_logout>
         </events>
+        <helpers>
+            <keliop_logger>
+                <class>Keliop_Logger_Helper</class>
+            </keliop_logger>
+        </helpers>
     </global>
     <frontend>
         <routers>

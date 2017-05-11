@@ -1,0 +1,23 @@
+<config>
+    <menu>
+        <keliop translate="title" module="keliop_logger">
+            <title>Keliop Logger</title>
+            <sort_order>100</sort_order>
+                    <action>adminhtml/logger/index</action>
+        </keliop>
+    </menu>
+    
+    <acl>
+        <resources>
+            <admin>
+                <children>                
+                    <keliop translate="title" module="keliop_logger">
+                        <title>Top Level Pulse Storm Menu Item</title>
+                        <sort_order>1</sort_order>
+                    </keliop>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    
+</config> 
