@@ -63,6 +63,11 @@
                 <class>Keliop_Logger_Helper</class>
             </keliop_logger>
         </helpers>
+        <blocks>
+            <keliop_logger>
+                <class>Keliop_Logger_Block</class>
+            </keliop_logger>
+        </blocks>
     </global>
     <frontend>
         <routers>
