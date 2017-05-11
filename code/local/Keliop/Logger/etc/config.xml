@@ -80,4 +80,11 @@
             </logger>
         </routers>  
     </frontend>
+        <default>
+        <keliop_section>
+            <general>
+                <logger_enabled>1</logger_enabled>
+            </general>
+        </keliop_section>
+    </default>
 </config>

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Description of Grid
+ * Class generate grid
  *
  * @author Dawid
  */

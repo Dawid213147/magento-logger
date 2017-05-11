@@ -1,12 +1,12 @@
+<?xml version="1.0"?>
 <config>
     <menu>
         <keliop translate="title" module="keliop_logger">
             <title>Keliop Logger</title>
             <sort_order>100</sort_order>
-                    <action>adminhtml/logger/index</action>
+            <action>adminhtml/logger/index</action>
         </keliop>
     </menu>
-    
     <acl>
         <resources>
             <admin>
@@ -15,9 +15,20 @@
                         <title>Login / Logout User Log</title>
                         <sort_order>1</sort_order>
                     </keliop>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <keliop_section translate="title" module="keliop_logger">
+                                        <title>keliop</title>
+                                        <sort_order>999</sort_order>
+                                    </keliop_section>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
                 </children>
             </admin>
         </resources>
     </acl>
-    
 </config> 

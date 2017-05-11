@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Description of Logger
+ * Class prepare block to create grid
  *
  * @author Dawid
  */
 class Keliop_Logger_Block_Adminhtml_Logger extends Mage_Adminhtml_Block_Widget_Grid_Container {
     
     /**
-     * 
+     * Constructor
      */
     public function __construct()
     {
