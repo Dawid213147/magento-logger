@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Keliop_Logger>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Keliop_Logger>
+    </modules>
+</config>
