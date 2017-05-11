@@ -13,7 +13,6 @@ class Keliop_Logger_Block_Adminhtml_Logger_Grid extends Mage_Adminhtml_Block_Wid
     public function __construct() {
         parent::__construct();
 
-        // Set some defaults for our grid
         $this->setDefaultSort('id');
         $this->setId('keliop_logger_grid');
         $this->setDefaultDir('asc');
