@@ -4,7 +4,7 @@
  * Controller generate grid
  * @author dawid
  */
-class Keliop_Logger_LoggerController extends Mage_Adminhtml_Controller_Action {
+class Kaliop_Logger_LoggerController extends Mage_Adminhtml_Controller_Action {
 
     /**
      * Action display grid in adminhtml
@@ -12,8 +12,8 @@ class Keliop_Logger_LoggerController extends Mage_Adminhtml_Controller_Action {
     public function indexAction() {
         
         $this->loadLayout();
-               $this->_setActiveMenu('keliop');
-        $this->_addContent($this->getLayout()->createBlock('keliop_logger/adminhtml_logger_grid'));
+        $this->_setActiveMenu('kaliop');
+        $this->_addContent($this->getLayout()->createBlock('kaliop_logger/adminhtml_logger_grid'));
         $this->renderLayout();
     }
 

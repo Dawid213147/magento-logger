@@ -5,13 +5,13 @@
  *
  * @author Dawid
  */
-class Keliop_Logger_Model_Resource_Logger_Collection extends Mage_Core_Model_Resource_Db_Collection_Abstract {
+class Kaliop_Logger_Model_Resource_Logger_Collection extends Mage_Core_Model_Resource_Db_Collection_Abstract {
     
     /**
      *  Init collection of logger
      */
     public function _construct()
     {
-        $this->_init('keliop_logger/logger');
+        $this->_init('kaliop_logger/logger');
     }
 }

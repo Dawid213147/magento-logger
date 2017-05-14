@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <config>   
     <modules>
-        <Keliop_Logger>
+        <Kaliop_Logger>
             <version>0.1.0</version>
-        </Keliop_Logger>
+        </Kaliop_Logger>
     </modules>
     <admin>
         <routers>
             <adminhtml>
                 <args>
                     <modules>
-                        <Keliop_Logger after="Mage_Adminhtml">Keliop_Logger</Keliop_Logger>
+                        <Kaliop_Logger after="Mage_Adminhtml">Kaliop_Logger</Kaliop_Logger>
                     </modules>
                 </args>
             </adminhtml>
@@ -18,55 +18,55 @@
     </admin>
     <global>
         <resources>
-            <keliop_logger_setup>
+            <kaliop_logger_setup>
                 <setup>
-                    <module>Keliop_Logger</module>
+                    <module>Kaliop_Logger</module>
                 </setup>
-            </keliop_logger_setup>
+            </kaliop_logger_setup>
         </resources>
         <models>
-            <keliop_logger>
-                <class>Keliop_Logger_Model</class>
-                <resourceModel>keliop_logger_resource</resourceModel>
-            </keliop_logger>
-            <keliop_logger_resource>
-                <class>Keliop_Logger_Model_Resource</class>
+            <kaliop_logger>
+                <class>Kaliop_Logger_Model</class>
+                <resourceModel>kaliop_logger_resource</resourceModel>
+            </kaliop_logger>
+            <kaliop_logger_resource>
+                <class>Kaliop_Logger_Model_Resource</class>
                 <entities>
                     <logger>
-                        <table>keliop_logger_logger</table>
+                        <table>kaliop_logger_logger</table>
                     </logger>
                 </entities>
-            </keliop_logger_resource>
+            </kaliop_logger_resource>
         </models>
         <events>
             <customer_login>
             <observers>
-                <keliop_observe_login>
+                <kaliop_observe_login>
                     <type>singleton</type>                    
-                    <class>Keliop_Logger_Model_Observer</class>
+                    <class>Kaliop_Logger_Model_Observer</class>
                     <method>customerLogEvent</method>
-                </keliop_observe_login>
+                </kaliop_observe_login>
             </observers>
         </customer_login>
          <customer_logout>
         <observers>
-             <keliop_observe_logout>
+             <kaliop_observe_logout>
                     <type>singleton</type>                    
-                    <class>Keliop_Logger_Model_Observer</class>
+                    <class>Kaliop_Logger_Model_Observer</class>
                     <method>customerLogEvent</method>
-                </keliop_observe_logout>
+                </kaliop_observe_logout>
         </observers>
     </customer_logout>
         </events>
         <helpers>
-            <keliop_logger>
-                <class>Keliop_Logger_Helper</class>
-            </keliop_logger>
+            <kaliop_logger>
+                <class>Kaliop_Logger_Helper</class>
+            </kaliop_logger>
         </helpers>
         <blocks>
-            <keliop_logger>
-                <class>Keliop_Logger_Block</class>
-            </keliop_logger>
+            <kaliop_logger>
+                <class>Kaliop_Logger_Block</class>
+            </kaliop_logger>
         </blocks>
     </global>
     <frontend>
@@ -74,17 +74,17 @@
             <logger>
                 <use>standard</use>
                 <args>
-                    <module>Keliop_Logger</module>
+                    <module>Kaliop_Logger</module>
                     <frontName>logger</frontName>
                 </args>
             </logger>
         </routers>  
     </frontend>
         <default>
-        <keliop_section>
+        <kaliop_section>
             <general>
                 <logger_enabled>1</logger_enabled>
             </general>
-        </keliop_section>
+        </kaliop_section>
     </default>
 </config>
