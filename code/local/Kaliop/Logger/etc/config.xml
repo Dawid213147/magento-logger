@@ -40,23 +40,23 @@
         </models>
         <events>
             <customer_login>
-            <observers>
-                <kaliop_observe_login>
-                    <type>singleton</type>                    
-                    <class>Kaliop_Logger_Model_Observer</class>
-                    <method>customerLogEvent</method>
-                </kaliop_observe_login>
-            </observers>
-        </customer_login>
-         <customer_logout>
-        <observers>
-             <kaliop_observe_logout>
-                    <type>singleton</type>                    
-                    <class>Kaliop_Logger_Model_Observer</class>
-                    <method>customerLogEvent</method>
-                </kaliop_observe_logout>
-        </observers>
-    </customer_logout>
+                <observers>
+                    <kaliop_observe_login>
+                        <type>singleton</type>                    
+                        <class>Kaliop_Logger_Model_Observer</class>
+                        <method>customerLogEvent</method>
+                    </kaliop_observe_login>
+                </observers>
+            </customer_login>
+            <customer_logout>
+                <observers>
+                    <kaliop_observe_logout>
+                        <type>singleton</type>                    
+                        <class>Kaliop_Logger_Model_Observer</class>
+                        <method>customerLogEvent</method>
+                    </kaliop_observe_logout>
+                </observers>
+            </customer_logout>
         </events>
         <helpers>
             <kaliop_logger>
@@ -80,7 +80,16 @@
             </logger>
         </routers>  
     </frontend>
-        <default>
+    <adminhtml>
+        <layout>
+            <updates>
+                <kaliop_logger>
+                    <file>kaliop_logger.xml</file>
+                </kaliop_logger>
+            </updates>
+        </layout>
+    </adminhtml>
+    <default>
         <kaliop_section>
             <general>
                 <logger_enabled>1</logger_enabled>
