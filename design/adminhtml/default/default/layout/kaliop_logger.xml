@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_logger_index>
+        <reference name="content">
+          <block type="kaliop_logger/adminhtml_logger_grid" name="kaliop_logger" />
+        </reference>
+    </adminhtml_logger_index>
+</layout>

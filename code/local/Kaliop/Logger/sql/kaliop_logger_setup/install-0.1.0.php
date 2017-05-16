@@ -5,7 +5,7 @@ $installer = $this;
 $installer->startSetup();
  
 $table = $installer->getConnection()
-    ->newTable($installer->getTable('keliop_logger/logger'))
+    ->newTable($installer->getTable('kaliop_logger/logger'))
     ->addColumn('user_id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, [
         'identity' => true,
         'unsigned' => true,

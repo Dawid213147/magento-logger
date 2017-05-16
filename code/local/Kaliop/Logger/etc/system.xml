@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <config>
     <tabs>
-        <keliops translate="label">
-            <label>Keliop Logger Configuration</label>
+        <kaliops translate="label">
+            <label>Kaliop Logger Configuration</label>
             <sort_order>1050</sort_order>
-        </keliops>
+        </kaliops>
     </tabs>
     <sections>
-        <keliop_section translate="label" module="keliop_logger">
+        <kaliop_section translate="label" module="kaliop_logger">
             <label>General</label>
-            <tab>keliops</tab>
+            <tab>kaliops</tab>
             <sort_order>10</sort_order>
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
@@ -21,10 +21,10 @@
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
-                    <comment>Configuration for Keliop Logger</comment>
+                    <comment>Configuration for Kaliop Logger</comment>
                     <fields>
                         <logger_enabled translate="label comment">
-                            <label>Keliop Logger</label>
+                            <label>Kaliop Logger</label>
                             <comment>Enabled loging user event</comment>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -36,6 +36,6 @@
                     </fields>
                 </general>
             </groups>
-        </keliop_section>
+        </kaliop_section>
     </sections>
 </config>

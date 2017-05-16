@@ -5,7 +5,7 @@
  *
  * @author Dawid
  */
-class Keliop_Logger_Block_Adminhtml_Logger_Grid extends Mage_Adminhtml_Block_Widget_Grid {
+class Kaliop_Logger_Block_Adminhtml_Logger_Grid extends Mage_Adminhtml_Block_Widget_Grid {
 
     /**
      * Constructor
@@ -14,7 +14,7 @@ class Keliop_Logger_Block_Adminhtml_Logger_Grid extends Mage_Adminhtml_Block_Wid
         parent::__construct();
 
         $this->setDefaultSort('id');
-        $this->setId('keliop_logger_grid');
+        $this->setId('kaliop_logger_grid');
         $this->setDefaultDir('asc');
         $this->setSaveParametersInSession(true);
     }
@@ -24,7 +24,7 @@ class Keliop_Logger_Block_Adminhtml_Logger_Grid extends Mage_Adminhtml_Block_Wid
      * @return string
      */
     protected function _getCollectionClass() {
-        return 'keliop_logger/logger_collection';
+        return 'kaliop_logger/logger_collection';
     }
 
     /**
